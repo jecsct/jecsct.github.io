@@ -188,6 +188,7 @@ body {
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     cursor: pointer;
     transition: max-height 0.3s ease;
+    z-index: 0; /* ensures it’s behind the text by default */
   }
   
   .expandable-box .box-title {
@@ -209,6 +210,7 @@ body {
     opacity: 0;
     transition: all 0.4s ease;
     pointer-events: none;
+    z-index: 0;
   }
   
   .expandable-box:hover .hover-img {
@@ -228,6 +230,12 @@ body {
     font-size: 0.95em;
     line-height: 1.6;
     color: #333;
+    z-index: 1; /* put text above the image */
+  }
+
+  .box-inner-content {
+    position: relative;
+    z-index: 1; /* ensures it stays above the hover image */
   }
 
   .box-content ul {
