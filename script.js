@@ -1,6 +1,11 @@
 document.querySelectorAll('.expandable-box').forEach(box => {
     box.addEventListener('click', () => {
       const content = box.querySelector('.box-content');
+      const arrow = box.querySelector('.arrow-icon');  // Select the arrow inside the box
+  
+      // Toggle the expanded class to trigger the arrow rotation
+      box.classList.toggle('expanded');
+  
       if (content.style.maxHeight) {
         content.style.maxHeight = null;
       } else {
