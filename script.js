@@ -32,3 +32,23 @@ document.addEventListener("DOMContentLoaded", function () {
     emailDiv.appendChild(mailtoLink);  // Add the mailto link
   });
   
+
+  // function toggleContent(el) {
+  //   const details = el.querySelector('.timeline-details');
+
+  //   if (el.classList.contains('active')) {
+  //     // Collapse
+  //     details.style.maxHeight = details.scrollHeight + 'px';
+  //     requestAnimationFrame(() => {
+  //       details.style.maxHeight = '0';
+  //     });
+  //     el.classList.remove('active');
+  //   } else {
+  //     // Expand
+  //     details.style.maxHeight = '0';
+  //     el.classList.add('active');
+  //     requestAnimationFrame(() => {
+  //       details.style.maxHeight = details.scrollHeight + 'px';
+  //     });
+  //   }
+  // }
