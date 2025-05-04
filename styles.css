@@ -406,16 +406,53 @@ body {
   box-shadow: 0 0 0 2px #0077cc44;
 }
 
+.timeline-item:first-child .timeline-dot {
+  background-color: #91d1ff;
+  box-shadow: 0 0 0 2px #0077cc; /* optional: lighter outer ring */
+}
+
+
 .timeline-item {
   margin-bottom: 30px;
   position: relative;
 }
+
 
 .timeline-content {
   background-color: #ffffff;
   padding: 15px 20px;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.timeline-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.timeline-content.expanded .arrow-icon {
+  transform: rotate(180deg);
+}
+
+.timeline-details {
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+  transition: max-height 0.4s ease, opacity 0.3s ease;
+}
+
+.timeline-content.expanded .timeline-details {
+  max-height: 500px; /* enough for full content */
+  opacity: 1;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
 
 .timeline-content h3 {

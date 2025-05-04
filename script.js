@@ -32,6 +32,12 @@ document.addEventListener("DOMContentLoaded", function () {
     emailDiv.appendChild(mailtoLink);  // Add the mailto link
   });
   
+  function toggleContent(element) {
+    element.classList.toggle('expanded');
+  }
+
+
+  
 
   // function toggleContent(el) {
   //   const details = el.querySelector('.timeline-details');

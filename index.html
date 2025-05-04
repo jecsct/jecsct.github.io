@@ -392,14 +392,17 @@
                 <div class="section-title">📈 My Tech Journey</div>
                 <div class="timeline">
 
-                    <div class="timeline-item ongoing">
+                    <div class="timeline-item">
                         <div class="timeline-dot"></div>
                         <div class="timeline-content" onclick="toggleContent(this)">
-                            <h3>2025 - Springboot🌱, Apache Kafka📬 and Postman📮</h3>
-                            <!-- <svg class="arrow-icon-timeline" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                stroke-width="1.5" stroke="currentColor" class="size-6">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
-                            </svg> -->
+                            <div class="timeline-header">
+                                <h3>2025 - Springboot🌱, Apache Kafka📬 and Postman📮</h3>
+                                <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                    viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                                </svg>
+                            </div>
                             <div class="timeline-details">
                                 <p>Currently, I'm developing a project where I try to apply all these technologies. Even
                                     after five years of coding in Java, I had never used the Spring framework, so I
@@ -414,128 +417,222 @@
                         </div>
                     </div>
 
-                    <div class="timeline-item ongoing">
+                    <div class="timeline-item">
                         <div class="timeline-dot"></div>
-                        <div class="timeline-content">
-                            <h3>2024 - Hyperledger Fabric⛓️</h3>
-                            <p>As part of my thesis, I used the Hyperledger Fabric framework from the Linux Foundation
-                                to develop my blockchain’s smart contracts.</p>
+                        <div class="timeline-content" onclick="toggleContent(this)">
+                            <div class="timeline-header">
+                                <h3>2024 - Hyperledger Fabric⛓️</h3>
+                                <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                    viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                                </svg>
+                            </div>
+                            <div class="timeline-details">
+
+                                <p>As part of my thesis, I used the Hyperledger Fabric framework from the Linux
+                                    Foundation
+                                    to develop my blockchain’s smart contracts.</p>
+                            </div>
                         </div>
                     </div>
 
                     <div class="timeline-item">
                         <div class="timeline-dot"></div>
-                        <div class="timeline-content">
-                            <h3>2023 - Learning C++ on Arduino🤖, Android 📱, Cloud☁️, Docker🐳,
-                                Terraform🌍 and Ansiable📡</h3>
-                            <p>This was a knowledge-filled year and also the year I transitioned from ISCTE to Técnico.
-                                Each new subject and project introduced me to new technologies.</p>
+                        <div class="timeline-content" onclick="toggleContent(this)">
+                            <div class="timeline-header">
+                                <h3>2023 - Learning C++ on Arduino🤖, Android 📱, Cloud☁️, Docker🐳,
+                                    Terraform🌍 and Ansiable📡</h3>
+                                <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                    viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                                </svg>
+                            </div>
+                            <div class="timeline-details">
 
-                            <p>I started the year by diving deeper into C++ with an Arduino project. The goal was to
-                                program two traffic lights, each with a button to shorten its cycle timer. What made
-                                this project tricky was that, after developing our semaphores, our group had to
-                                integrate a third and fourth Arduinos programmed by another group and everything had to work with
-                                minimal tuning. The traffic lights were controlled by a central entity that sent signals
-                                to change the lights. Our code had to be as modular as possible to allow easy addition
-                                and removal of components.</p>
+                                <p>This was a knowledge-filled year and also the year I transitioned from ISCTE to
+                                    Técnico.
+                                    Each new subject and project introduced me to new technologies.</p>
 
-                            <p>Next came an Android project. The goal was to build an app for managing free libraries
-                                spread across the city. Users could add and remove books from different libraries by
-                                scanning their QR codes. All data was stored in a centralized SQLite3 database. The app
-                                was developed in Python with flask.</p>
+                                <p>I started the year by diving deeper into C++ with an Arduino project. The goal was to
+                                    program two traffic lights, each with a button to shorten its cycle timer. What made
+                                    this project tricky was that, after developing our semaphores, our group had to
+                                    integrate a third and fourth Arduinos programmed by another group and everything had
+                                    to
+                                    work with
+                                    minimal tuning. The traffic lights were controlled by a central entity that sent
+                                    signals
+                                    to change the lights. Our code had to be as modular as possible to allow easy
+                                    addition
+                                    and removal of components.</p>
 
-                            <p>After that, we tackled a project focused on performance-aware auto-scaling using AWS
-                                infrastructure. We launched several EC2 instances behind a load balancer and configured
-                                an auto-scaler. These instances executed compute-intensive tasks, and the objective was
-                                to automatically scale the number of running instances to handle all incoming requests.
-                                Additionally, DynamoDB was used to store performance metrics for each request.</p>
+                                <p>Next came an Android project. The goal was to build an app for managing free
+                                    libraries
+                                    spread across the city. Users could add and remove books from different libraries by
+                                    scanning their QR codes. All data was stored in a centralized SQLite3 database. The
+                                    app
+                                    was developed in Python with flask.</p>
 
-                            <p>To wrap up the year, we developed a full-featured website using a microservices
-                                architecture hosted on Google Cloud Platform (GCP). The project infrastructure was
-                                defined using Terraform and deployed accordingly. Once the virtual machines were up and
-                                running, Ansible playbooks were used to configure the instances and install all
-                                necessary software and commands automatically. The microservices shared a SQLite3 database. Furthermore, Prometheus and Grafana were
-                                integrated with the microservices to monitor and track various performance metrics.</p>
+                                <p>After that, we tackled a project focused on performance-aware auto-scaling using AWS
+                                    infrastructure. We launched several EC2 instances behind a load balancer and
+                                    configured
+                                    an auto-scaler. These instances executed compute-intensive tasks, and the objective
+                                    was
+                                    to automatically scale the number of running instances to handle all incoming
+                                    requests.
+                                    Additionally, DynamoDB was used to store performance metrics for each request.</p>
 
+                                <p>To wrap up the year, we developed a full-featured website using a microservices
+                                    architecture hosted on Google Cloud Platform (GCP). The project infrastructure was
+                                    defined using Terraform and deployed accordingly. Once the virtual machines were up
+                                    and
+                                    running, Ansible playbooks were used to configure the instances and install all
+                                    necessary software and commands automatically. The microservices shared a SQLite3
+                                    database. Furthermore, Prometheus and Grafana were
+                                    integrated with the microservices to monitor and track various performance metrics.
+                                </p>
+                            </div>
                         </div>
                     </div>
 
                     <div class="timeline-item">
                         <div class="timeline-dot"></div>
-                        <div class="timeline-content">
-                            <h3>2022 - Software Arquitecure🏛️, Unit Testing✅ and NoSQL Databases📂 </h3>
-                            <p>Finally, after so much, the end of the bachelor’s degree was getting closer. With it came
-                                the last steps, just a few edges left to polish. To wrap up our tech journey, this
-                                final semester focused heavily on combining technologies and concepts we’d learned
-                                throughout the previous semesters.</p>
+                        <div class="timeline-content" onclick="toggleContent(this)">
+                            <div class="timeline-header">
 
-                            <p>But some fine-tuning was still needed. So, we learned about software architecture
-                                principles and how crucial they are to developing professional, maintainable code. We
-                                also covered unit testing, finally moving past the 1001 print statements,
-                                and added a new type of database to our repertoire: NoSQL, specifically MongoDB.</p>
+                                <h3>2022 - Software Arquitecure🏛️, Unit Testing✅ and NoSQL Databases📂 </h3>
+                                <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                    viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                                </svg>
+                            </div>
+                            <div class="timeline-details">
+
+                                <p>Finally, after so much, the end of the bachelor’s degree was getting closer. With it
+                                    came
+                                    the last steps, just a few edges left to polish. To wrap up our tech journey, this
+                                    final semester focused heavily on combining technologies and concepts we’d learned
+                                    throughout the previous semesters.</p>
+
+                                <p>But some fine-tuning was still needed. So, we learned about software architecture
+                                    principles and how crucial they are to developing professional, maintainable code.
+                                    We
+                                    also covered unit testing, finally moving past the 1001 print statements,
+                                    and added a new type of database to our repertoire: NoSQL, specifically MongoDB.</p>
+                            </div>
                         </div>
                     </div>
 
                     <div class="timeline-item">
                         <div class="timeline-dot"></div>
-                        <div class="timeline-content">
-                            <h3>2021 - Parallel🧵 & Function(λ)l🧬 Programing, Python🐍 & Django <img
-                                    src="images/cowboy-hat.png" style="vertical-align: bottom; height: 1.2em;">, and
-                                HTML🧱 & CSS🎨</h3>
-                            <p>After grasping OOP, I dived into parallel and functional programming (jesus christ never again). Parallel programming was surprisingly intuitive. Once I understood
-                                how locks worked for shared resources and how to avoid race conditions, most of it felt
-                                straightforward.</p>
+                        <div class="timeline-content" onclick="toggleContent(this)">
+                            <div class="timeline-header">
 
-                            <p>Functional programming, on the other hand, was a nightmare. Not being allowed to use
-                                loops was incredibly frustrating. We really struggled to finish the project, but
-                                somehow, we pulled through.</p>
+                                <h3>2021 - Parallel🧵 & Function(λ)l🧬 Programing, Python🐍 & Django <img
+                                        src="images/cowboy-hat.png" style="vertical-align: bottom; height: 1.2em;">, and
+                                    HTML🧱 & CSS🎨</h3>
+                                <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                    viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                                </svg>
+                            </div>
+                            <div class="timeline-details">
 
-                            <p>This was also the year I learned how to program in Python and used my first full-stack
-                                framework: Django. As a group, we developed a complete website to sell various items. It
-                                was also the first time I touched HTML and CSS. The site included product pages, a login
-                                and authentication system, profile pages, and user reviews — all with data stored in a
-                                SQLite3 database.</p>
+                                <p>After grasping OOP, I dived into parallel and functional programming (jesus christ
+                                    never
+                                    again). Parallel programming was surprisingly intuitive. Once I understood
+                                    how locks worked for shared resources and how to avoid race conditions, most of it
+                                    felt
+                                    straightforward.</p>
 
-                            <p>During the development of this project, my friends and I, freshly introduced to Agile
-                                methodologies, decided to use Trello to manage our workflow. It turned out to be
-                                incredibly useful. Instead of randomly assigning tasks and forgetting what needed to be
-                                done, we kept everything documented and neatly organized.</p>
+                                <p>Functional programming, on the other hand, was a nightmare. Not being allowed to use
+                                    loops was incredibly frustrating. We really struggled to finish the project, but
+                                    somehow, we pulled through.</p>
 
+                                <p>This was also the year I learned how to program in Python and used my first
+                                    full-stack
+                                    framework: Django. As a group, we developed a complete website to sell various
+                                    items. It
+                                    was also the first time I touched HTML and CSS. The site included product pages, a
+                                    login
+                                    and authentication system, profile pages, and user reviews — all with data stored in
+                                    a
+                                    SQLite3 database.</p>
+
+                                <p>During the development of this project, my friends and I, freshly introduced to Agile
+                                    methodologies, decided to use Trello to manage our workflow. It turned out to be
+                                    incredibly useful. Instead of randomly assigning tasks and forgetting what needed to
+                                    be
+                                    done, we kept everything documented and neatly organized.</p>
+                            </div>
                         </div>
                     </div>
 
                     <div class="timeline-item">
                         <div class="timeline-dot"></div>
-                        <div class="timeline-content">
-                            <h3>2020 - Diving deeper into Java☕, Introduction to SQl & Databases🗃️, and Initial
-                                Concepts of C & Shell Scripting⚙️</h3>
-                            <p>After grasping the basics of programming, I moved on to learning about object-oriented
-                                programming, which really helped me write more structured code. Instead of putting
-                                everything in the same file — or even in the same function — I began organizing my code,
-                                and it finally started to look at least "somewhat professional"... though still far from
-                                it hahaha. My first fully-fledged app was a Sokoban game.</p>
+                        <div class="timeline-content" onclick="toggleContent(this)">
+                            <div class="timeline-header">
 
-                            <p>Around this time, I also learned about SQL and databases. I didn’t really get it at first, 
-                                SQL seemed super confusing in the beginning, but eventually it clicked, as everything eventually does.</p>
+                                <h3>2020 - Diving deeper into Java☕, Introduction to SQl & Databases🗃️, and Initial
+                                    Concepts of C & Shell Scripting⚙️</h3>
+                                <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                    viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                                </svg>
+                            </div>
+                            <div class="timeline-details">
 
-                            <p>I also started dabbling in C and shell scripting. While shell scripts were relatively
-                                easy to understand (regex expressions tho💀), C was super confusing for me at first.
-                                Coming from Java, which handles pointers, garbage collection, and gives you clear error
-                                messages, C felt like being thrown into the deep end with the segmation faults (core dumped).</p>
+                                <p>After grasping the basics of programming, I moved on to learning about
+                                    object-oriented
+                                    programming, which really helped me write more structured code. Instead of putting
+                                    everything in the same file — or even in the same function — I began organizing my
+                                    code,
+                                    and it finally started to look at least "somewhat professional"... though still far
+                                    from
+                                    it hahaha. My first fully-fledged app was a Sokoban game.</p>
 
+                                <p>Around this time, I also learned about SQL and databases. I didn’t really get it at
+                                    first,
+                                    SQL seemed super confusing in the beginning, but eventually it clicked, as
+                                    everything
+                                    eventually does.</p>
+
+                                <p>I also started dabbling in C and shell scripting. While shell scripts were relatively
+                                    easy to understand (regex expressions tho💀), C was super confusing for me at first.
+                                    Coming from Java, which handles pointers, garbage collection, and gives you clear
+                                    error
+                                    messages, C felt like being thrown into the deep end with the segmation faults (core
+                                    dumped).</p>
+                            </div>
                         </div>
                     </div>
 
                     <div class="timeline-item">
                         <div class="timeline-dot"></div>
-                        <div class="timeline-content">
-                            <h3>2019 - Started my journey with Java ☕</h3>
-                            <p>I started my programming journey by writing my first Java functions, classes, and print
-                                statements.</p>
+                        <div class="timeline-content" onclick="toggleContent(this)">
+                            <div class="timeline-header">
 
-                            <p>My first app was a calculator. After that, I built an app that took an image as input and
-                                allowed me to apply different transformations and filters to it.</p>
+                                <h3>2019 - Started my journey with Java ☕</h3>
+                                <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                    viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                                </svg>
+                            </div>
+                            <div class="timeline-details">
 
+                                <p>I started my programming journey by writing my first Java functions, classes, and
+                                    print
+                                    statements.</p>
+
+                                <p>My first app was a calculator. After that, I built an app that took an image as input
+                                    and
+                                    allowed me to apply different transformations and filters to it.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
