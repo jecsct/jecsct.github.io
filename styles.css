@@ -377,14 +377,35 @@ body {
 
 .tech-icons img {
   width: 60px;
-  /* Increased size for icons */
   height: 60px;
-  /* Increased size for icons */
-  transition: transform 0.3s;
+  transition: transform 0.3s ease;
 }
 
 .tech-icons img:hover {
   transform: scale(1.1);
+}
+
+.tech-icon-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.tech-icon-wrapper span {
+  margin-top: 8px;
+  font-size: 0.9em;
+  font-weight: 500;
+  color: #0077cc; /* Modern soft blue */
+  opacity: 0;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  transform: translateY(5px);
+  pointer-events: none;
+}
+
+.tech-icon-wrapper:hover span {
+  opacity: 1;
+  transform: translateY(0); /* Subtle rise-up effect */
 }
 
 
